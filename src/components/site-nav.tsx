@@ -37,20 +37,21 @@ export default function SiteNav() {
         backdropFilter: scrolled ? "blur(12px)" : "none",
       }}
     >
-      <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
         <a
           href="#hero"
           style={{
             fontFamily: "'Bebas Neue', sans-serif",
-            fontSize: "22px",
+            fontSize: "clamp(18px, 1.8vw, 26px)",
             color: "var(--gold)",
             letterSpacing: "2px",
             transition: "opacity 0.2s",
+            flexShrink: 0,
           }}
         >
           THE STRAYS
         </a>
-        <ul style={{ listStyle: "none", display: "flex", gap: "36px" }}>
+        <ul style={{ listStyle: "none", display: "flex", gap: "clamp(24px, 4vw, 80px)" }}>
           <li><a href="#story" style={linkStyle}>STORY</a></li>
           <li><a href="#director" style={linkStyle}>DIRECTOR</a></li>
           <li><a href="#contact" style={linkStyle}>CONTACT</a></li>
