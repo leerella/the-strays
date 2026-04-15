@@ -10,7 +10,7 @@ const characters = [
     quote: "차갑고 날카로운 외면 아래, 가장 깊은 감정을 노래에 담는 보컬. 뱀의 직감과 침묵을 지닌 The Strays의 중심.",
     name: "클로에",
     designation: "// VOCAL · 뱀 수인",
-    src: "/characters/char-chloe.jpeg",
+    src: "/characters/char-chloe.jpg",
   },
   {
     quote: "부드럽고 온화한 성격 속에 흔들리지 않는 리듬을 품은 건반 연주자. 양의 온기로 밴드의 균형을 지킨다.",
@@ -34,7 +34,7 @@ const characters = [
     quote: "빠르고 유연한 손놀림으로 멜로디를 유영하는 기타리스트. 원숭이의 재치와 즉흥성이 연주에 생기를 더한다.",
     name: "이원영",
     designation: "// GUITAR · 원숭이 수인",
-    src: "/characters/char-guitar.png",
+    src: "/characters/char-guitar.jpg",
   },
 ];
 

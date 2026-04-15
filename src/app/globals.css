@@ -109,3 +109,23 @@
     object-fit: cover;
   }
 }
+
+/* Viewport edge glow animation */
+@keyframes glowFlow {
+  0%   { box-shadow: 0 0 30px 6px rgba(242, 76, 0, 0.10) inset; }
+  25%  { box-shadow: 24px 0 42px 0px rgba(242, 76, 0, 0.17) inset,
+                    -3px 0 18px 0px rgba(242, 76, 0, 0.04) inset; }
+  50%  { box-shadow: 0 0 48px 12px rgba(242, 76, 0, 0.20) inset; }
+  75%  { box-shadow: -24px 0 42px 0px rgba(242, 76, 0, 0.17) inset,
+                     3px 0 18px 0px rgba(242, 76, 0, 0.04) inset; }
+  100% { box-shadow: 0 0 30px 6px rgba(242, 76, 0, 0.10) inset; }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  animation: glowFlow 10s ease-in-out infinite;
+}

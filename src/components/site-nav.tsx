@@ -6,7 +6,11 @@ export default function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => {
+      const story = document.getElementById("story");
+      const threshold = story ? story.offsetTop - 80 : window.innerHeight;
+      setScrolled(window.scrollY > threshold);
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
